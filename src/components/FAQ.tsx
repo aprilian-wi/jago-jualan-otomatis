@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { HelpCircle } from "lucide-react";
 
 const faqData = [
   {
@@ -38,24 +39,35 @@ const faqData = [
 
 const FAQ = () => {
   return (
-    <section className="py-20 bg-muted/50">
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            Pertanyaan yang Sering Ditanyakan
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <HelpCircle className="h-4 w-4" />
+            FAQ
+          </div>
+          <h2 className="text-3xl lg:text-5xl font-bold mb-6 leading-tight">
+            Pertanyaan yang{" "}
+            <span style={{ background: 'linear-gradient(to right, #20CB98, #20CB98)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+              Sering Ditanyakan
+            </span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Temukan jawaban atas pertanyaan umum tentang ChatCoaster dan bagaimana platform ini dapat membantu bisnis Anda.
           </p>
         </div>
-        <div className="max-w-3xl mx-auto">
-          <Accordion type="single" collapsible className="w-full">
+        <div className="max-w-4xl mx-auto">
+          <Accordion type="single" collapsible className="w-full space-y-4">
             {faqData.map((item, index) => (
-              <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="text-left">
+              <AccordionItem
+                key={index}
+                value={`item-${index}`}
+                className="bg-card border border-border/50 rounded-lg px-6 shadow-sm hover:shadow-md transition-shadow duration-200"
+              >
+                <AccordionTrigger className="text-left py-6 text-lg font-medium hover:text-primary transition-colors">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
+                <AccordionContent className="text-muted-foreground pb-6 leading-relaxed">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
