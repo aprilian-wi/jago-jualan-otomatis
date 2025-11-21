@@ -13,7 +13,7 @@ const Hero = () => {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
-              Bisnis <span className="text-accent">Meluncur Tinggi</span> Tanpa Kewalahan
+              Bisnis <span style={{ background: 'linear-gradient(to top right, #01C286, #1B79B9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Meluncur Tinggi</span> Tanpa Kewalahan
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground">
               ChatCoaster bantu kelola chat pelanggan, pesanan, dan toko online secara otomatis. 

@@ -65,7 +65,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 pt-8 text-center">
           <p className="text-sm text-primary-foreground/60">
-            © 2024 ChatCoaster. All rights reserved. Made with 💚 for UMKM Indonesia
+            © 2025 ChatCoaster. All rights reserved. Made with 💚 for UMKM Indonesia
           </p>
         </div>
       </div>

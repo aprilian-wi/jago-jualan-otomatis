@@ -48,8 +48,7 @@ const FAQ = () => {
           </div>
           <h2 className="text-3xl lg:text-5xl font-bold mb-6 leading-tight">
             Pertanyaan yang{" "}
-            <span style={{ background: 'linear-gradient(to right, #20CB98, #20CB98)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-              Sering Ditanyakan
+            <span style={{ background: 'linear-gradient(to top right, #01C286, #1B79B9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Sering Ditanyakan
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
