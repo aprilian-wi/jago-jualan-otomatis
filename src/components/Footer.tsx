@@ -8,10 +8,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">CC</span>
-              </div>
-              <span className="text-xl font-bold">ChatCoaster</span>
+              <img src="/logo.png" alt="ChatCoaster Logo" className="h-10 w-auto" />
             </div>
             <p className="text-sm text-primary-foreground/80">
               AI Chat Assistant untuk UMKM Indonesia. Bisnis meluncur tinggi tanpa kewalahan!
